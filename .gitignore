@@ -216,3 +216,5 @@ pip-log.txt
 
 build/
 .idea/
+node_modules/
+build/
