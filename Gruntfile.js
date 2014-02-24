@@ -47,14 +47,14 @@ module.exports = function(grunt) {
                 dest: 'build/',
                 ext: '.min.css'
             }
-        },
-        assets_versioning: {
+        }
+        /*assets_versioning: {
             dist: {
                 options: {
                     multitask: 'uglify'
                 }
             }
-        }
+        }*/
     });
 
 
@@ -62,7 +62,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.loadNpmTasks('grunt-assets-versioning');
 
-    grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'cssmin', 'assets_versioning']);
+    grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'cssmin']);
 };
